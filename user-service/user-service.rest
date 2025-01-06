@@ -1,0 +1,24 @@
+###
+POST http://127.0.0.1:3000/user/register  HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Savita Dahiwadkar",
+  "email": "savita.dahiwadkar@example.com",
+  "password": "123123123"
+}
+
+###
+
+POST http://127.0.0.1:3000/user/login  HTTP/1.1
+content-type: application/json
+
+{
+  "email": "savita.dahiwadkar@example.com",
+  "password": "123123123"
+}
+
+####
+GET http://127.0.0.1:3000/user/logout  HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3N2FiZTM5Nzk2OTQ4YmUyNGY5ZTA2ZiIsIm5hbWUiOiJTYXZpdGEgRGFoaXdhZGthciIsImVtYWlsIjoic2F2aXRhLmRhaGl3YWRrYXJAZXhhbXBsZS5jb20iLCJfX3YiOjB9LCJpYXQiOjE3MzYwOTk4MjMsImV4cCI6MTczNjEwMzQyM30.mR1AfJ6BAUaOy4ij5sD_GeDj8E57W4TTgMhFiyzF7cU
