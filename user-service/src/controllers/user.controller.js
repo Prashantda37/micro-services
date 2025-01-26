@@ -16,7 +16,6 @@ module.exports.register = async function (req, res) {
     const newUser = new userModel({ name, email, password: hash });
     await newUser.save();
 
-    // jwt.sign({ id: newUser._id }, process.env.JWT_SECRET, { expiresIn: "1h" });
     res.send({ data: newUser, message: "Register successfully." })
 
   } catch (error) {
@@ -57,6 +56,14 @@ module.exports.logout = async function (req, res) {
 
     await blacklisttokenModel.create({ token });
     res.send({ message: "user logout successfully." })
+  } catch (error) {
+    res.status(500).json({ message: error.message })
+  }
+}
+// To use for others authentication
+module.exports.profile = async function (req, res) {
+  try {
+    res.send(req.user)
   } catch (error) {
     res.status(500).json({ message: error.message })
   }

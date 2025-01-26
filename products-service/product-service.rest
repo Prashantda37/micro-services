@@ -1,0 +1,35 @@
+###
+GET http://127.0.0.1:3000/products  HTTP/1.1
+content-type: application/json
+
+
+###
+POST http://127.0.0.1:3000/products  HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3N2FiZTM5Nzk2OTQ4YmUyNGY5ZTA2ZiIsIm5hbWUiOiJTYXZpdGEgRGFoaXdhZGthciIsImVtYWlsIjoic2F2aXRhLmRhaGl3YWRrYXJAZXhhbXBsZS5jb20iLCJfX3YiOjB9LCJpYXQiOjE3Mzc5MDI1NjQsImV4cCI6MTczNzkwNjE2NH0.6CS9dJgnrimcR9Zx6WvJYIZz8ztKHvuGZlubavCY4as
+
+{
+  "title": "Essence Mascara Lash Princess",
+  "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+  "category": "beauty",
+  "price": 9.99,
+  "discountPercentage": 7.17,
+  "rating": 4.94,
+  "stock": 5,
+  "tags": [
+    "beauty",
+    "mascara"
+  ],
+  "brand": "Essence",
+  "sku": "RCH45Q1A",
+  "weight": 2,
+  "dimensions": {
+    "width": 23.17,
+    "height": 14.43,
+    "depth": 28.01
+  },
+  "images": [
+    "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png"
+}
