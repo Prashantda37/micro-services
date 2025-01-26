@@ -14,6 +14,8 @@ class ProductController {
 
   async addProduct(req: Request, res: Response) {
     try {
+      // user should have a admin right 
+      // req.user // which was saved in middleware.
       const data = await addProduct(req.body);
       res.send({ message: "Product added successfully", product: data })
     } catch (error: any) {
